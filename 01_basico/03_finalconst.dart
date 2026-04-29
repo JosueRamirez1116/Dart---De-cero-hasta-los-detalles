@@ -5,9 +5,9 @@ main() {
   const double c =
       10; // const es una variable que debe ser asignada en tiempo de compilación y no puede cambiar su valor después de ser asignada. Es útil para valores que son constantes en todo el programa, como números mágicos o configuraciones que deben permanecer constantes a lo largo de la ejecución del programa.
 
-  a = 20; // Permite cambiar el valor de 'a'
-  b = 20; // Error: No se puede cambiar el valor de 'b' porque es final. final es mas ligera en memoria que const, ya que se asigna en tiempo de ejecución, mientras que const se asigna en tiempo de compilación.
-  c = 20; // Error: No se puede cambiar el valor de 'c' porque es const. Esta es recomendada para valores que no cambiarán en absoluto, como números mágicos o configuraciones que deben permanecer constantes a lo largo de la ejecución del programa.
+  // a = 20; // Permite cambiar el valor de 'a'
+  // b = 20; // Error: No se puede cambiar el valor de 'b' porque es final. final es mas ligera en memoria que const, ya que se asigna en tiempo de ejecución, mientras que const se asigna en tiempo de compilación.
+  // c = 20; // Error: No se puede cambiar el valor de 'c' porque es const. Esta es recomendada para valores que no cambiarán en absoluto, como números mágicos o configuraciones que deben permanecer constantes a lo largo de la ejecución del programa.
 
   //Diferencia entre final y const
 
@@ -30,9 +30,9 @@ main() {
     personasConst,
   ); // Esto no se ejecutará debido al error en la línea anterior.
 
-  final List<String> personasFinal = ['Juan', 'María', 'Pedro'];
+  // final List<String> personasFinal = ['Juan', 'María', 'Pedro'];
 
-  List<String> personasConst = const ['Juan', 'María', 'Pedro'];
+  // List<String> personasConst = const ['Juan', 'María', 'Pedro'];
 
   personasFinal.add(
     'Ana',
